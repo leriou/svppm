@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"svppm/src"
+	svppm "svppm/src"
 )
 
 func main() {
+
 	row := make([]int, 256*256*3)
 
 	p := 0
@@ -18,6 +19,5 @@ func main() {
 		}
 	}
 	svppm.Svppm("test.ppm", 256, 256, row)
-
 	fmt.Println("well,done")
 }
